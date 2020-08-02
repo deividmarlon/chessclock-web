@@ -1,0 +1,77 @@
+.ClockPage {
+    text-align: center;
+  }
+
+.Hide{
+  display:none;
+}
+  
+  
+.ClockPage main{
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Menu{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0;
+}
+.Menu button{
+  flex:1;
+  height: 100%;
+  padding: 10px;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.5s;
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  font-weight: bold;
+  color: #FFF;  
+}
+.ClockPage a:hover{
+  background: #6931ca;
+}
+
+.Timer{
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  font-size: calc(60px + 2vmin);
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background 0.5s;
+  text-decoration: none;
+  background: #000;  /* fallback for old browsers */
+  color: #fff;
+}
+
+.Timer_Reverse{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}
+
+.Timer_Disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.Timer_Running{
+  background: #4e54c8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  color: #000;
+}
+

@@ -1,0 +1,68 @@
+.toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.toolbar_navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.spacer{
+    flex:1;
+}
+
+.toolbar_logo{
+    margin-left: 1rem;
+}
+
+.toolbar_logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.toolbar_navigation-items ul{
+    list-style : none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_navigation-items  li{
+    padding: 0 0.5rem;
+}
+.toolbar_navigation-items a{
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar_navigation-items a:hover , .toolbar_navigation-items a:active{
+    color: orange;
+}
+
+@media(max-width: 768px){
+    .toolbar_navigation-items{
+        display: none;
+    }
+}
+
+@media(min-width: 769px){
+    .toolbar_toogle-button{
+        display: none;
+    }
+    .toolbar_logo{
+        margin-left: 0;
+    }
+}
+
