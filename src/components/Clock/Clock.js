@@ -6,9 +6,17 @@ import logo from '../../logo.svg';
 
 const Clock = props => {
 
+  var disableStatusOne;
+  var disableStatusTwo;
   if((props.clockOne.m ===0 && props.clockOne.s ===0) || (props.clockTwo.m===0 && props.clockTwo.s===0)){
-    props.disableStatusOne = true;
-    props.disableStatusTwo = true;
+    disableStatusOne = true;
+    disableStatusTwo = true;
+    props.pause();
+    props.stopOne();
+    props.stopTwo();
+  }else{
+    disableStatusOne = props.disableStatusOne;
+    disableStatusTwo = props.disableStatusTwo;
   }
 
   return (
